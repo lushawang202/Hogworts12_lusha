@@ -1,0 +1,90 @@
+{
+  "name": "calc_add_num[-1111111111.1--2222222222.2--3333333333.3]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert -3333333333.2999997 == -3333333333.3\n  +-3333333333.2999997\n  --3333333333.3",
+    "trace": "self = <test_code.test_Calc.Test_Calc object at 0x000001F3C0A37748>, a = -1111111111.1, b = -2222222222.2, expect = -3333333333.3\n\n    @allure.story(\"加法：数字型\")\n    @pytest.mark.parametrize('a, b, expect', fetch_data(\"Add_alnum\"))\n    def calc_add_num(self, a, b, expect):\n        if 'add' in steps:\n            with allure.step(\"读取所有数据'Add_alnum'并运行程序计算结果a+b\"):\n                result = self.calc.add(a, b)\n            with allure.step(\"四舍五入保留计算结果15位小数\"):\n                result = round(result, 15)\n            with allure.step(\"对比计算结果与预期结果\"):\n>               assert result == round(expect, 15)\nE               assert -3333333333.2999997 == -3333333333.3\nE                 +-3333333333.2999997\nE                 --3333333333.3\n\ntest_Calc.py:34: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "读取所有数据'Add_alnum'并运行程序计算结果a+b",
+      "status": "passed",
+      "start": 1590141901608,
+      "stop": 1590141901608
+    },
+    {
+      "name": "四舍五入保留计算结果15位小数",
+      "status": "passed",
+      "start": 1590141901608,
+      "stop": 1590141901608
+    },
+    {
+      "name": "对比计算结果与预期结果",
+      "status": "failed",
+      "statusDetails": {
+        "message": "AssertionError: assert -3333333333.2999997 == -3333333333.3\n  +-3333333333.2999997\n  --3333333333.3\n",
+        "trace": "  File \"D:\\_hogwarts\\Hogworts12_lusha\\test_code\\test_Calc.py\", line 34, in calc_add_num\n    assert result == round(expect, 15)\n"
+      },
+      "start": 1590141901608,
+      "stop": 1590141901609
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "-1111111111.1"
+    },
+    {
+      "name": "b",
+      "value": "-2222222222.2"
+    },
+    {
+      "name": "expect",
+      "value": "-3333333333.3"
+    }
+  ],
+  "start": 1590141901608,
+  "stop": 1590141901609,
+  "uuid": "68ecffa7-9150-4482-a660-41ff4cd45e56",
+  "historyId": "fd9ddf4ed95a7f619e8e8c68eb887010",
+  "testCaseId": "02dfc68bd6b209d023508f3c8318e57f",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_add_num",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "add"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}

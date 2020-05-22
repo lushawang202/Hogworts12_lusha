@@ -1,0 +1,76 @@
+{
+  "name": "calc_div_0exc[0-0-除数不能为0]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "读取所有数据'Div_0exc'并运行程序计算结果a/b",
+      "status": "passed",
+      "start": 1590141901736,
+      "stop": 1590141901736
+    },
+    {
+      "name": "对比计算结果与预期结果",
+      "status": "passed",
+      "start": 1590141901736,
+      "stop": 1590141901736
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "0"
+    },
+    {
+      "name": "b",
+      "value": "0"
+    },
+    {
+      "name": "expect",
+      "value": "'除数不能为0'"
+    }
+  ],
+  "start": 1590141901736,
+  "stop": 1590141901736,
+  "uuid": "0ba37229-6af2-4406-b72d-9c5977a5318f",
+  "historyId": "e01a4d2a765ce9e40e4b7fd293e8d1ce",
+  "testCaseId": "3926c758ece9500fd1514b57bb8e3592",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_div_0exc",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}

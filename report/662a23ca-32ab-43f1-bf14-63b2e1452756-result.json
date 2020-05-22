@@ -1,0 +1,76 @@
+{
+  "name": "calc_add_str[#a-0-#a0]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "读取所有数据'Add_str'并运行程序计算结果a+b",
+      "status": "passed",
+      "start": 1590141901634,
+      "stop": 1590141901634
+    },
+    {
+      "name": "对比计算结果与预期结果",
+      "status": "passed",
+      "start": 1590141901634,
+      "stop": 1590141901634
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "'#a'"
+    },
+    {
+      "name": "b",
+      "value": "'0'"
+    },
+    {
+      "name": "expect",
+      "value": "'#a0'"
+    }
+  ],
+  "start": 1590141901634,
+  "stop": 1590141901634,
+  "uuid": "20ddfed5-c353-48bd-ba79-51135f361cfc",
+  "historyId": "ffe0b1b29517b8c26302d251ef4f4780",
+  "testCaseId": "9fa1b1cf848afd61dec0a24877517d58",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_add_str",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "add"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}

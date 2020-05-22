@@ -1,0 +1,82 @@
+{
+  "name": "calc_div_num[-1111111111.1--2222222222.2-0.5]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "读取所有数据'Div_num'并运行程序计算结果a/b",
+      "status": "passed",
+      "start": 1590141901691,
+      "stop": 1590141901691
+    },
+    {
+      "name": "四舍五入保留计算结果15位小数",
+      "status": "passed",
+      "start": 1590141901691,
+      "stop": 1590141901691
+    },
+    {
+      "name": "对比计算结果与预期结果",
+      "status": "passed",
+      "start": 1590141901691,
+      "stop": 1590141901691
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "-1111111111.1"
+    },
+    {
+      "name": "b",
+      "value": "-2222222222.2"
+    },
+    {
+      "name": "expect",
+      "value": "0.5"
+    }
+  ],
+  "start": 1590141901691,
+  "stop": 1590141901691,
+  "uuid": "be103aee-c68c-4a42-86f8-237c10d529e8",
+  "historyId": "41d6102f0d9a948a6ef7ac46a0793436",
+  "testCaseId": "2a4b6e4c8e53793a636e30b24fadfae1",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_div_num",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}

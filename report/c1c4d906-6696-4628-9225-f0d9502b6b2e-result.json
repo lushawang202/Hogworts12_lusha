@@ -1,0 +1,66 @@
+{
+  "name": "calc_mul_str[1-3-3]",
+  "status": "broken",
+  "statusDetails": {
+    "message": "UserWarning",
+    "trace": "self = <test_code.test_Calc.Test_Calc object at 0x000001F3C0A5F1C8>, a = 1, b = 3, expect = 3\n\n    @allure.story(\"乘法：字符型\")\n    @pytest.mark.parametrize('a, b, expect', fetch_data(\"Mut_str\"))\n    def calc_mul_str(self, a, b, expect):\n        if 'mul' in steps:\n            with allure.step(\"读取所有数据'Mul_str'并运行程序计算结果a*b\"):\n                result = self.calc.mul(a, b)\n            with allure.step(\"对比计算结果与预期结果\"):\n                assert result == expect\n        else:\n>           raise UserWarning\nE           UserWarning\n\ntest_Calc.py:131: UserWarning"
+  },
+  "parameters": [
+    {
+      "name": "a",
+      "value": "1"
+    },
+    {
+      "name": "b",
+      "value": "3"
+    },
+    {
+      "name": "expect",
+      "value": "3"
+    }
+  ],
+  "start": 1590141901783,
+  "stop": 1590141901783,
+  "uuid": "10232699-a004-45b0-ac27-650e6cc40b05",
+  "historyId": "c3a45af3472230e74e815f32eee3b45c",
+  "testCaseId": "d0a08c7216a47b593e59bc174a21f80f",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_mul_str",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}

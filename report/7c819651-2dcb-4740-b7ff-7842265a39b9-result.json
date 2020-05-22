@@ -1,0 +1,82 @@
+{
+  "name": "calc_div_str[#a-0-TypeError]",
+  "status": "skipped",
+  "statusDetails": {
+    "message": "TypeError: unsupported operand type(s) for /: 'str' and 'str'",
+    "trace": "self = <test_code.test_Calc.Test_Calc object at 0x000001F3C0A32A08>, a = '#a', b = '0', expect = 'TypeError'\n\n    @allure.story(\"除法：字符型\")\n    @pytest.mark.xfail\n    @pytest.mark.parametrize('a, b, expect', fetch_data(\"Div_str\"))\n    def calc_div_str(self, a, b, expect):\n        if 'div' in steps:\n            with allure.step(\"读取所有数据'Div_str'并运行程序计算结果a/b\"):\n>               result = self.calc.div(a, b)\n\ntest_Calc.py:79: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <dev_code.Calculator.Calc object at 0x000001F3C0A49808>, a = '#a', b = '0'\n\n    def div(self, a, b):\n        try:\n>           return a / b\nE           TypeError: unsupported operand type(s) for /: 'str' and 'str'\n\n..\\dev_code\\Calculator.py:11: TypeError"
+  },
+  "steps": [
+    {
+      "name": "读取所有数据'Div_str'并运行程序计算结果a/b",
+      "status": "broken",
+      "statusDetails": {
+        "message": "TypeError: unsupported operand type(s) for /: 'str' and 'str'\n",
+        "trace": "  File \"D:\\_hogwarts\\Hogworts12_lusha\\test_code\\test_Calc.py\", line 79, in calc_div_str\n    result = self.calc.div(a, b)\n  File \"D:\\_hogwarts\\Hogworts12_lusha\\dev_code\\Calculator.py\", line 11, in div\n    return a / b\n"
+      },
+      "start": 1590141901741,
+      "stop": 1590141901741
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "'#a'"
+    },
+    {
+      "name": "b",
+      "value": "'0'"
+    },
+    {
+      "name": "expect",
+      "value": "'TypeError'"
+    }
+  ],
+  "start": 1590141901741,
+  "stop": 1590141901742,
+  "uuid": "65f33882-fbe5-40af-abe5-b6593d8756dd",
+  "historyId": "9079b8076698a57b1406bd8a400650d6",
+  "testCaseId": "80f6c97b438857b02ed82c9e99e83729",
+  "fullName": "test_code.test_Calc.Test_Calc#calc_div_str",
+  "labels": [
+    {
+      "name": "tag",
+      "value": "xfail"
+    },
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_code"
+    },
+    {
+      "name": "suite",
+      "value": "test_Calc"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test_Calc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17116-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_code.test_Calc"
+    }
+  ]
+}
