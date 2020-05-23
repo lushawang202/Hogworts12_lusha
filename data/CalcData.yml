@@ -12,7 +12,7 @@
 # Div_0exc（除数为0，被除数为0或非0）
 # Common_str（数字、字母、特殊字符（加法成立、除法不成立））
 
-Add_alnum:
+Add_num:
   - - 3333333333
     - 6666666666
     - 9999999999
@@ -120,11 +120,11 @@ Sub_str:
   - - 'a'
     - '3'
     - TypeError
-Sub_alnum:
+Sub_num:
   - - 1
     - 3
     - -2
-Mul_alnum:
+Mul_num:
   - - 1
     - 3
     - 3
