@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from time import sleep
-
 from selenium.webdriver.common.by import By
-from selenium.webdriver.remote.webdriver import WebDriver
-
 from Web.Web_2.Page.Contact import Contact
 from Web.Web_2.Page.add_member import AddMember
 from Web.Web_2.Page.base_page import Base_Page

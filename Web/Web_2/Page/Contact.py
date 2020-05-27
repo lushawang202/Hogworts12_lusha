@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from time import sleep
-
 from selenium.webdriver.common.by import By
 
 from Web.Web_2.Page.add_member import AddMember

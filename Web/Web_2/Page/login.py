@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import shelve
-from time import sleep
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.remote.webdriver import WebDriver
-
-# from Web.Web_2.Page.index import Index
 from Web.Web_2.Page.base_page import Base_Page
 from Web.Web_2.Page.main import Main
 

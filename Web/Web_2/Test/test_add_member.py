@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from selenium import webdriver
 
-from Web.Web_2.Page.base_page import Base_Page
 from Web.Web_2.Page.index import Index
 
 
