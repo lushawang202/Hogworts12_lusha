@@ -14,3 +14,6 @@ class Index(Base_Page):
     def goto_login(self):
         self.find_ele(By.CSS_SELECTOR, ".index_top_operation_loginBtn").click()
         return Login(self._driver)
+
+    def quit_browser(self):
+        self._driver.quit()

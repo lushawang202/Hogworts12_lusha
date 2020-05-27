@@ -17,5 +17,6 @@ class Main(Base_Page):
         return AddMember(self._driver)
 
     def goto_contact(self):
-        self.find_ele(By.LINK_TEXT, "通讯录").click()
+        self.wait_to_click((By.CSS_SELECTOR, ".frame_nav_item:nth-child(2)"))
+        self.find_ele(By.CSS_SELECTOR, ".frame_nav_item:nth-child(2)").click()
         return Contact(self._driver)
