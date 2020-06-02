@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from decimal import Decimal
 
 import allure
 import pytest
-from dev_code.Calculator import Calc
+from first_practise.dev_code.Calculator import Calc
 import yaml
 
 

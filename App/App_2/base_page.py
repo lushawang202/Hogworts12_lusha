@@ -4,6 +4,8 @@ import logging
 
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.webdriver import WebDriver
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class BasePage:
@@ -23,11 +25,9 @@ class BasePage:
         logging.info(locator)
         logging.info(value)
         try:
-            if isinstance(locator, tuple):
-                element = self._driver.find_element(*locator)
-
-            else:
-                element = self._driver.find_element(locator, value)
+            element = self._driver.find_element(*locator) if isinstance(locator,
+                                                                        tuple) else self._driver.find_element(
+                locator, value)
             self._error_num = 0
             self._driver.implicitly_wait(10)
             return element
@@ -43,6 +43,13 @@ class BasePage:
                     locators[0].click()
                     return self.find(locator, value)
 
+    def finds(self, locator, value=None):
+        return self._driver.find_elements(*locator) if isinstance(locator, tuple) else self._driver.find_elements(
+            locator, value)
+
     def scroll_find(self, value: str):
         return self._driver.find_element_by_android_uiautomator(
             'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(' + '"' + value + '"' + ').instance(0));')
+
+    def wait_to_click(self, locator):
+        WebDriverWait(self._driver, 5).until(expected_conditions.element_to_be_clickable(locator))

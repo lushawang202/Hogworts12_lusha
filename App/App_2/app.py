@@ -28,5 +28,8 @@ class App(BasePage):
     def stop(self):
         pass
 
+    def back(self):
+        self.back()
+
     def main(self):
         return Main(self._driver)

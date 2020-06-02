@@ -17,4 +17,5 @@ class InviteBy(BasePage):
         return ManualAdd(self._driver)
 
     def get_toast(self):
-        return self.find(MobileBy.XPATH, '//*[@class="android.widget.Toast"]').text
+        Toast = self.find(MobileBy.XPATH, '//*[@class="android.widget.Toast"]')
+        return Toast.text
