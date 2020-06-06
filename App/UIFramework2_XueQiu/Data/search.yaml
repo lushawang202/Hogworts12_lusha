@@ -2,19 +2,23 @@ search:
   - action: sendkeys
     by: xpath
     value: "//*[@resource-id='com.xueqiu.android:id/search_input_text']"
-    text: 'alibaba'
+    text: ${search_name}
   - action: click
     by: xpath
-    value: "//*[@text='BABA']"
+    value: "//*[@text='${search_code}']"
 add_favorate:
   - action: click
     by: xpath
-    value: '//*[@text="BABA"]/../../..//*[@text="加自选"]'
+    value: '//*[@text="${search_code}"]/../../..//*[@text="加自选"]'
 is_favorate:
   - action: if_elements
     by: xpath
-    value: '//*[@text="BABA"]/../../..//*[@text="已添加"]'
+    value: '//*[@text="${search_code}"]/../../..//*[@text="已添加"]'
 remove_favorate:
   - action: click
     by: xpath
-    value: '//*[@text="BABA"]/../../..//*[@text="已添加"]'
+    value: '//*[@text="${search_code}"]/../../..//*[@text="已添加"]'
+click_cancel:
+  - action: click
+    by: xpath
+    value: '//*[@resource-id="com.xueqiu.android:id/action_close"]'

@@ -8,23 +8,27 @@ from App.UIFramework2_XueQiu.Page.base_page import BasePage
 class Search(BasePage):
     _path = '../Data/search.yaml'
 
-    def search(self):
-        self.steps(self._path, 'search')
-        # self.sendkeys(MobileBy.XPATH, "//*[@resource-id='com.xueqiu.android:id/search_input_text']", 'alibaba')
-        # self.click(MobileBy.XPATH, "//*[@text='BABA']")
+    def search(self, search_name, search_code):
+        self._input_param['search_name'] = search_name
+        self._input_param['search_code'] = search_code
+        self.steps(self._path)
         return self
 
-    def add_favorate(self):
-        self.steps(self._path, 'add_favorate')
-        # self.click(MobileBy.XPATH, '//*[@text="BABA"]/../../..//*[@text="加自选"]')
+    def add_favorate(self, search_code):
+        self._input_param['search_code'] = search_code
+        self.steps(self._path)
         return self
 
-    def is_favorate(self):
-        # elements = self.finds(MobileBy.XPATH, '//*[@text="BABA"]/../../..//*[@text="已添加"]')
-        self.steps(self._path, 'is_favorate')
-        # return elements
+    def is_favorate(self, search_code):
+        self._input_param['search_code'] = search_code
+        return self.steps(self._path)
 
-    def remove_favorate(self):
-        self.steps(self._path, 'remove_favorate')
-        # self.click(MobileBy.XPATH, '//*[@text="BABA"]/../../..//*[@text="已添加"]')
+    def remove_favorate(self, search_code):
+        self._input_param['search_code'] = search_code
+        self.steps(self._path)
         return self
+
+    def click_cancel(self):
+        self.steps(self._path)
+        from App.UIFramework2_XueQiu.Page.main import Main
+        return Main(self._driver)

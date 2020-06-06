@@ -16,7 +16,7 @@ class App:
         caps["appPackage"] = " com.xueqiu.android"
         caps["appActivity"] = ".common.MainActivity"
         caps["noReset"] = "true"
-        caps['newCommandTimeout'] = 6000
+        caps['newCommandTimeout'] = 600
         # caps["dontStopAppOnReset"] = True
         self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self._driver.implicitly_wait(10)

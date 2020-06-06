@@ -1,0 +1,4 @@
+goto_search:
+  - action: click
+    by: xpath
+    value: "//*[@resource-id='com.xueqiu.android:id/action_search']"

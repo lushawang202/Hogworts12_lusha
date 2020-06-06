@@ -1,0 +1,62 @@
+{
+  "name": "test_search[alibaba-BABA]",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "log",
+      "source": "1989c118-970f-42db-a087-2a99faa1380d-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "stderr",
+      "source": "60c061af-7b44-4d6a-a4d2-80593f472aea-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "name",
+      "value": "'alibaba'"
+    },
+    {
+      "name": "code",
+      "value": "'BABA'"
+    }
+  ],
+  "start": 1591354359910,
+  "stop": 1591354367713,
+  "uuid": "5a07511d-3807-4f83-81d8-0174605d436b",
+  "historyId": "0ff7c6abcf5d7df2c33a996519d3f244",
+  "testCaseId": "adc14523dcd8e989c08f66a296ae5986",
+  "fullName": "test_search.Test#test_search",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "test_search"
+    },
+    {
+      "name": "subSuite",
+      "value": "Test"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-L5NRB75"
+    },
+    {
+      "name": "thread",
+      "value": "17212-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_search"
+    }
+  ]
+}

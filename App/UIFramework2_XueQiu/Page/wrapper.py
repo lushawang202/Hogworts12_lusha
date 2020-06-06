@@ -1,25 +1,37 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import logging
+import allure
 from appium.webdriver.common.mobileby import MobileBy
 
 
 def handle_black(func):
+    logging.basicConfig(level=logging.INFO)
+
     def wrapper(*args, **kwargs):
         _black_list = [(MobileBy.XPATH, "//*[@text='下次再说']"),
                        (MobileBy.XPATH, "//*[@text='确定']"),
                        (MobileBy.XPATH, "//*[@text='确认']"),
+                       (MobileBy.ID, 'com.xueqiu.android:id/image_cancel')
                        ]
         error_num = 1
         error_max = 3
-        from App.UIFramework1_XueQiu.Page.base_page import BasePage
+        from App.UIFramework2_XueQiu.Page.base_page import BasePage
         instance: BasePage = args[0]
         while True:
             try:
+                logging.info('running ' + func.__name__ + '\n args: \n' + repr(args[1:]) + repr(kwargs))
                 element = func(*args, **kwargs)
                 error_num = 0
                 instance._driver.implicitly_wait(10)
                 return element
             except Exception as e:
+                instance.screenshot('tmp.png')
+                with open('tmp.png', 'rb') as f:
+                    content = f.read()
+                allure.attach(content, attachment_type=allure.attachment_type.PNG)
+                logging.error('elements not found, handle black list')
+
                 if error_num > error_max:
                     raise e
                 instance._driver.implicitly_wait(1)

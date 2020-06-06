@@ -1,0 +1,18 @@
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', "//*[@resource-id='com.xueqiu.android:id/action_search']"){}
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', "//*[@resource-id='com.xueqiu.android:id/search_input_text']"){}
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', "//*[@text='01810']"){}
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', '//*[@text="01810"]/../../..//*[@text="已添加"]'){}
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', '//*[@text="01810"]/../../..//*[@text="加自选"]'){}
+[32mINFO    [0m root:wrapper.py:24 run find
+ args: 
+('xpath', '//*[@resource-id="com.xueqiu.android:id/action_close"]'){}

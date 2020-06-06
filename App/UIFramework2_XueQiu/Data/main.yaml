@@ -1,0 +1,8 @@
+goto_market:
+  - action: click
+    by: xpath
+    value: "//*[@resource-id='android:id/tabs']//*[@text='行情']"
+goto_search:
+  - action: click
+    by: xpath
+    value: "//*[@resource-id='com.xueqiu.android:id/tv_search']"

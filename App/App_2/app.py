@@ -15,7 +15,7 @@ class App(BasePage):
             caps["appPackage"] = "com.tencent.wework"
             caps["appActivity"] = ".launch.WwMainActivity"
             caps["noReset"] = "true"
-            caps["dontStopAppOnReset"] = True
+            # caps["dontStopAppOnReset"] = True
             self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         else:
             self._driver.launch_app()
